@@ -1,0 +1,12 @@
+.mainDash {
+   background-color: blue;
+   color: white;
+   padding: 30px;
+}
+
+h1{
+    font-weight: 800;
+    font-size: large;
+    text-align: end;
+    padding-right: 30px;
+}
