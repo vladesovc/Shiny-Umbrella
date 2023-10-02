@@ -28,3 +28,7 @@ h1{
     background-color: navy;
     color:white;
 }
+
+#history-list{
+    padding-top: 10px;
+}
