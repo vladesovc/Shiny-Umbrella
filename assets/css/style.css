@@ -1,3 +1,7 @@
+body{
+    background-color: lightgray;
+}
+
 .mainDash {
    background-color: blue;
    color: white;
@@ -6,7 +10,21 @@
 
 h1{
     font-weight: 800;
-    font-size: large;
+    font-size: x-large;
     text-align: end;
-    padding-right: 30px;
+    padding-right: 20px;
+}
+
+.userInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.userInput input {
+    margin-bottom: 10px;
+}
+
+#search-button{
+    background-color: navy;
+    color:white;
 }
