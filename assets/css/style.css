@@ -12,7 +12,7 @@ h1{
     font-weight: 800;
     font-size: x-large;
     text-align: end;
-    padding-right: 20px;
+    padding-right: 150px;
 }
 
 .userInput {
@@ -31,4 +31,20 @@ h1{
 
 #history-list{
     padding-top: 10px;
+}
+
+.col-md-9{
+    padding-left: 20px;
+    display: grid;
+    justify-content: left;
+    border-color: navy; 
+    border-style: solid;
+}
+
+#futureWeather{
+    margin-top: 75px;
+    padding: 100px;   
+    display: flex;
+    border-style: solid;
+    border-color: navy;
 }

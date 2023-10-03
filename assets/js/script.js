@@ -25,6 +25,8 @@ const searchWeather = (event) => {
     const cityInput = document.getElementById('search-input').value;
     saveToLocalStorage(cityInput);
     fetchWeather(cityInput);
+
+    document.getElementById('search-input').value = '';
 };
 
 const displayCurrentWeather = (data) => {
@@ -44,6 +46,25 @@ const displayCurrentWeather = (data) => {
     wind.textContent = `Wind Speed: ${data.wind.speed} mph`;
     currentWeather.append(cityName, date, icon, temp, humidity, wind);
 }
+
+// Having a tough time getting this to display, trying to find where the parent is that I need to start from and work into
+// const displayFutureWeather = (data) => {
+//     const futureWeather = document.getElementById("futureWeather");
+//     futureWeather.innerHTML = ""
+//     const cityName = document.createElement("h2");
+//     const date = document.createElement("h2");
+//     const icon = document.createElement("img");
+//     const temp = document.createElement("p");
+//     const humidity = document.createElement("p");
+//     const wind = document.createElement("p");
+//     cityName.textContent = list.name;
+//     date.textContent = dayjs.unix(list.dt).format("MM/DD/YY");
+//     icon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+//     temp.textContent = `Temperature: ${data.list.temp} F`;
+//     humidity.textContent = `Humidity: ${data.list.humidity} %`;
+//     wind.textContent = `Wind Speed: ${data.list.speed} mph`;
+//     futureWeather.append(cityName, date, icon, temp, humidity, wind);
+// }
 
 const fetchWeather = (cityInput) => {
     var apiUrlWeather = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&q=${cityInput}&units=imperial`;
@@ -69,6 +90,7 @@ const updateSearchHistory = (city) => {
     displaySearchHistory(savedHistory);
 };
 
+// this is what displays the search history 
 const displaySearchHistory = (history) => {
     const historyList = document.getElementById('history-list');
     historyList.innerHTML = '';  // Clear existing history
@@ -82,6 +104,7 @@ const displaySearchHistory = (history) => {
         historyList.appendChild(listItem);
     });
 };
+
 
 document.getElementById('search-form').addEventListener('submit', searchWeather);
 
