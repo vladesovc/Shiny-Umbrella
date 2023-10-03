@@ -11,11 +11,19 @@ ON this website, you will find a main header welcoming you to the Weather Dashbo
 Usage:
 For a traveller to check the weather for the current and future conditions so they can properly plan their trip, or plans. 
 
-Credits
+Credits:
 N/A
 
-License
+License:
 Please refer to the LICENSE in the repo
+
+Application Screeshots:
+
+![image](https://github.com/vladesovc/Shiny-Umbrella/assets/144492864/ea040ca6-ef3a-41f7-942e-1d3ff4f8e323)
+
+
+![image](https://github.com/vladesovc/Shiny-Umbrella/assets/144492864/be0df019-fb35-40c3-9b1e-a37bec8f097f)
+
 
 PSeudoCode 
 
